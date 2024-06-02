@@ -20,6 +20,8 @@ body {
 
 
 .page {
+    background-position: center center;
+    background-attachment: fixed;
     display: none;
     flex-direction: column;
     align-items: center;
