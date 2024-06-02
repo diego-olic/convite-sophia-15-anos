@@ -1,0 +1,270 @@
+body {
+    background-image: url(azul2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page1 {
+    display: flex;
+    width: auto;
+    height: auto;
+
+}
+
+#page1 > h1 {
+    font-family: Meow Script, sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    margin: 10px;
+    color: rgb(0, 238, 255);
+    text-shadow:
+    0 0 5px #fff;
+}
+
+#page1 > h2{
+    font-family: Playfair Display, sans-serif;
+    font-weight: 800;
+    color: aqua;
+    font-size: 55px;
+    text-shadow:
+    0 0 5px #fff;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+button{
+    font-family: Playfair Display, sans-serif;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 7px double aqua;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#age{
+    font-family: Playfair Display, sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+}
+
+#name{
+    font-family: Meow Script, sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: center;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+}
+
+#date{
+    font-family: Playfair Display, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#hour{
+    font-family: Playfair Display, sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#phonelink{
+    font-family: Playfair Display, sans-serif;
+    width: 50px;
+    height: 50px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+#phoneimg{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#pinimg{
+    font-family: Playfair Display, sans-serif;
+    width: 50px;
+    height: 50px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#icons{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#icons > a{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#note{
+    font-family: Playfair Display, sans-serif;
+    font-size: 35px;
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff;
+    padding: 50px;
+
+}
+
+@media (max-width: 430px){
+    #page1 > h1{
+        font-size: 105px;
+        margin-right: 50px;
+    }
+    #page1 > h2{
+        font-size: 30px;
+    }
+    button{
+        width: 115px;
+        height: 115px;
+    }
+    #date{
+        font-size: 30px;
+    }
+
+    #hour{
+        font-size: 30px;
+    }
+
+    body{
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        width:60vw;
+        height: 100vh;
+        margin-left: 70px;
+        margin-top: 60px;
+    }
+    #date{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    #hour{
+        font-size: 25px;
+    }
+    #name{
+        font-size: 65px;
+    }
+    #age{
+        font-size: 65px;
+    }
+    #note{
+        font-size: 25px;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.show {
+    display: flex;
+}
+
+.animate-in {
+    animation-name: slideIn;
+}
+
+.animate-out {
+    animation-name: slideOut;
+}
